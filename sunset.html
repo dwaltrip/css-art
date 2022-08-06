@@ -26,7 +26,7 @@
         180deg,
         /*rgb(58 39 212) 0%,*/
         rgb(31 78 193) 0%,
-        rgba(255,187,0,1) 49%,
+        rgba(255,187,0,1) 50%,
         rgba(121,9,36,1) 100%
       );
     }
@@ -37,12 +37,22 @@
       border-top-right-radius: 100%;
       border-top-left-radius: 100%;
       /*background: #d4664a;*/
-      background: #de9a0f;
+      /*background: #de9a0f;*/
+      background: #d8d295;
       position: absolute;
       border-bottom-left-radius: 100%;
       border-bottom-right-radius: 100%;
-      top: calc(100% - 75px);
       left: calc(50% - 75px);
+
+      animation-name: setting-sun; 
+      animation-duration: 8s;
+      animation-timing-function: cubic-bezier(0.4, 0.050, 0.6, 0.95);
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes setting-sun {
+      from { top: -75px; }
+      to { top: calc(100% - 75px); }
     }
 
     .ocean {
