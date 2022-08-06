@@ -17,14 +17,18 @@
       background: red;
     }
 
-    .rectangle {
-
-    }
-
     .sky {
       flex: 1;
-      background: #deb075;
+      /*background: #deb075;*/
       position: relative;
+
+      background: linear-gradient(
+        180deg,
+        /*rgb(58 39 212) 0%,*/
+        rgb(31 78 193) 0%,
+        rgba(255,187,0,1) 49%,
+        rgba(121,9,36,1) 100%
+      );
     }
 
     .sun {
@@ -32,7 +36,8 @@
       height: 150px;
       border-top-right-radius: 100%;
       border-top-left-radius: 100%;
-      background: #d4664a;
+      /*background: #d4664a;*/
+      background: #de9a0f;
       position: absolute;
       border-bottom-left-radius: 100%;
       border-bottom-right-radius: 100%;
@@ -42,8 +47,14 @@
 
     .ocean {
       height: 300px;
-      background: #2571b7;
+      /*background: #201f7f;*/
       z-index: 10;
+      background: linear-gradient(
+        180deg,
+        #201f7f 0%,
+        #091640 30%,
+        #201f7f 100%
+      );
     }
   </style>
 </head>
@@ -51,11 +62,11 @@
 <body>
 
   <div class='app'>
-    <div class='rectangle sky'>
+    <div class='sky'>
       <div class='sun'></div>
     </div>
 
-    <div class='rectangle ocean'></div>
+    <div class='ocean'></div>
   </div>
 </body>
 </html>
